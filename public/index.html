@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="myModule">
+    <head>
+        <title>Movie List</title>
+        <script type="text/javascript" src="angular.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+		<script type="text/javascript" src="js/ngStorage.min.js"></script>
+		<!--<script src="https://cdn.jsdelivr.net/ngstorage/0.3.6/ngStorage.min.js"></script>-->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+    </head>
+        
+    <body ng-controller="myController">
+        
+        <div class="movielist">
+            
+            <div class="search">
+                <input type="text" name="search" placeholder="Enter full movie name" ng-model="search" autofocus/>
+                <input type="submit" value="Search"/>
+            </div>
+			<hr/>
+            <div id="main-info" ng-include="'partials/main-info.html'" class="col-md-8"></div>
+			<div id="related-results" ng-include="'partials/related-results.html'" class="col-md-4 animated bounce related-results"></div>
+        
+            
+           
+        </div>
+		
+             
+			
+        <center>
+			<div class="wishlist">
+                <h3>&#9825;Movie Wishlist&#9825;</h3><hr/>
+				<div ng-repeat="wishList in wishlistToDispaly">
+                    {{ wishList.Title }}, Year {{ wishList.Year }}
+                </div>
+            </div>
+        </center> 
+    </body>
+</html>

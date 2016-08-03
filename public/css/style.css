@@ -1,0 +1,53 @@
+body {
+  background: url(../images/bg-sky.png);
+  background-repeat: repeat !important;
+  background-attachment: fixed;
+}
+
+.search{background-color:black;height:70px;}
+input[type="text"]
+{
+	float:left;
+    width: 250px;
+    height: 30px;
+    border: 2px solid black;
+    padding: 5px;
+	margin-left:35%;
+	margin-top:2%;
+    border-radius: 5px;
+}
+input[type="submit"]
+{
+	float:right;
+	margin-right:30%;
+    margin-top:2%;
+    width: 150px;
+    height: 30px;
+    background-color:darkseagreen;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+ .related-results {
+	 
+  -moz-animation-delay: 1.5s;
+  -webkit-animation-delay: 1.5s;
+}
+
+.movie-poster {
+  float:left;
+  width: 150px;
+  margin-right: 10px;
+  -moz-animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+}
+            .wishlist{
+                float:left;
+                width: 300px;
+                height: 100%;
+                position: relative;
+                border:2px solid black;
+            }
+.addwish{
+	font-size:22px;
+	pointer:cursor;
+}
